@@ -1,0 +1,94 @@
+@import "blaze";
+
+html, body {
+  height: 100%;
+}
+
+body.flavour-chocolate {
+  background-color: #9f8170;
+}
+body.flavour-vanilla {
+  background-color: #fff5ee;
+}
+body.flavour-strawberry {
+  background-color: #ff91a4;
+}
+body.flavour-pistachio {
+  background-color: #ddfed1;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+h1#title {
+  font-size: 3em;
+}
+
+#question {
+  height: calc(100% - #{$nav-height});
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h1, h2 {
+    margin-top: 0;
+    text-align: center;
+  }
+}
+
+#options {
+  display: flex;
+  justify-content: space-around;
+  .option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+    width: 15em;
+    height: 15em;
+    background-color: map-get($colors, grey-light);
+    > * {
+      margin: 0.5em;
+    }
+    img {
+      max-width: 12em;
+      height: 12em;
+    }
+  }
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  padding: 0.5em;
+  bottom: 0;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+#end {
+  height: calc(100% - #{$nav-height});
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  img:not(.nomargin) {
+    max-height: 40vh;
+    margin: 2em;
+  }
+  h1 {
+    margin: 0;
+  }
+  a:not(.c-button) {
+    color: map-get($colors, blue-dark);
+    text-decoration: underline;
+  }
+}
+
+.c-field {
+  margin: 0.5em auto;
+  display: block;
+  width: 30em;
+}

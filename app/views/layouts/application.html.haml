@@ -1,0 +1,14 @@
+!!!
+%html
+  %head
+    %title Of course!
+    = csrf_meta_tags
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  %body.c-text
+    %ul.c-nav.c-nav--inline
+      = link_to root_path do
+        %li.c-nav__item Of course!
+      = link_to 'http://www.leeds.gov.uk/' do
+        %li.c-nav__item.c-nav__item--right Leeds City Council
+    = yield
