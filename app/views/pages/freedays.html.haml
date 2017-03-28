@@ -1,0 +1,21 @@
+#question
+  %h1 Are there any times when you are busy <i>every week</i>?
+  #ticks
+    %label.c-field.c-field--choice
+      %input{type: 'checkbox'} Daytimes during the week
+    %label.c-field.c-field--choice
+      %input{type: 'checkbox'} Mondays
+    %label.c-field.c-field--choice
+      %input{type: 'checkbox'} Tuesdays
+    %label.c-field.c-field--choice
+      %input{type: 'checkbox'} Wednesdays
+    %label.c-field.c-field--choice
+      %input{type: 'checkbox'} Thursdays
+    %label.c-field.c-field--choice
+      %input{type: 'checkbox'} Fridays
+    %label.c-field.c-field--choice
+      %input{type: 'checkbox'} Saturdays
+    %label.c-field.c-field--choice
+      %input{type: 'checkbox'} Sundays
+  .action= link_to "That's it!", page_path('knowwhat'), class: 'c-button c-button--success u-xlarge'
+.footer Don't give me that "I'm busy every day" nonsense...

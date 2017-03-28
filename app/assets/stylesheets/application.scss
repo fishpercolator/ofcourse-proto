@@ -31,8 +31,19 @@ h1#title {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   h1, h2 {
     margin-top: 0;
+    text-align: center;
+  }
+  #ticks {
+    width: 15em;
+    margin-bottom: 1em;
+  }
+  input[type="checkbox"] {
+    margin-right: 0.5em;
+  }
+  .action {
     text-align: center;
   }
 }
@@ -40,6 +51,7 @@ h1#title {
 #options {
   display: flex;
   justify-content: space-around;
+  width: 100%;
   .option {
     display: flex;
     flex-direction: column;
@@ -69,6 +81,13 @@ h1#title {
   font-size: 0.8em;
 }
 
+.action {
+  margin-top: 1em;
+  .c-button {
+    margin: 0 1em;
+  }
+}
+
 #end {
   height: calc(100% - #{$nav-height});
   display: flex;
@@ -85,12 +104,6 @@ h1#title {
   a:not(.c-button) {
     color: map-get($colors, blue-dark);
     text-decoration: underline;
-  }
-  .action {
-    margin-top: 1em;
-    .c-button {
-      margin: 0 1em;
-    }
   }
   iframe {
     margin: 2em;
