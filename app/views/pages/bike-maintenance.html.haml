@@ -1,0 +1,9 @@
+#end
+  %h1 Cool &mdash; you're a biker! This might be of interest:
+  %p There's a <b>Road Bike Maintenance</b> class at:
+  %div= image_tag 'swarthmore.jpg', class: 'nomargin'
+  %h2 Swarthmore Education Centre, Tuesdays at 1pm
+  %p And best of all &mdash; it's <b>FREE!!!</b>
+  .action
+    = link_to 'Find out more', page_path('swarthmore'), class: 'c-button c-button--success u-xlarge'
+    = link_to 'Ugh, no thanks', page_path('end-confidence'), class: 'c-button c-button--error u-xlarge'

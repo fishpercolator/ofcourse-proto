@@ -3,4 +3,4 @@
     = link_to(link.present? ? page_path(link) : page_path('justademo'), id: name.underscore) do
       .option
         = image_tag image if image.present?
-        = name
+        %p= name
