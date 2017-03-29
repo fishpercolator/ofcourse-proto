@@ -2,6 +2,7 @@
 %html
   %head
     %title Of course!
+    %meta{name: 'viewport', content: 'width=device-width, initial-scale=1.0'}
     = csrf_meta_tags
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
@@ -11,4 +12,5 @@
         %li.c-nav__item Of course!
       = link_to 'http://www.leeds.gov.uk/' do
         %li.c-nav__item.c-nav__item--right Leeds City Council
-    = yield
+    %main
+      = yield
